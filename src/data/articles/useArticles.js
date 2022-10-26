@@ -120,7 +120,7 @@ const useArticles = () => {
             }
         });
         return bTake;
-    }, [articles]);
+    }, [articles, mostMentioned]);
 
     const topMentionBearish = useMemo(() => {
         let topM = mostMentioned;
@@ -132,7 +132,7 @@ const useArticles = () => {
             }
         });
         return brTake;
-    }, [articles]);
+    }, [articles, mostMentioned]);
 
     const topThreeBullishTwo = useMemo(() => {
         const topMe = mostMentioned;
@@ -148,22 +148,20 @@ const useArticles = () => {
             },
             { BullishTake: 0 }
         );
-    }, [articles]);
+    }, [articles, mostMentioned]);
 
     const topThreeBullish = useMemo(() => {
         // filter articles down to only ones that only contained MOST MENTIONED ticker
         const filtered = articles.filter(
-            (article) => article.TickerRef == mostMentioned
+            (article) => article.TickerRef === mostMentioned
         );
         // sort them by bullishtake
         filtered.sort((a, b) => b.BullishTake - a.BullishTake);
-        console.log(filtered);
 
         // group them by newsname --- keep highest bullishtake
-        const filteredGrouped = filtered.filter(({ NewsName }) => NewsName);
-        console.log(filteredGrouped);
+        //        const filteredGrouped = filtered.filter(({ NewsName }) => NewsName);
         // return first three entries
-    }, [articles]);
+    }, [articles, mostMentioned]);
 
     return {
         articles,
