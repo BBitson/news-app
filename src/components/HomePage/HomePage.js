@@ -14,7 +14,6 @@ function HomePage() {
             <div className="most-bullish">
                 <MostBullish />
             </div>
-            blah blag
             <div className="most-bearish">
                 <MostBearish />
             </div>
