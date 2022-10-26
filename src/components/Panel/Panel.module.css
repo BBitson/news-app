@@ -4,7 +4,7 @@
     border-radius: 20px;
     flex: 1;
     width: calc(100% - 40px);
-    height: calc(100% - 40px);
+    height: 225px;
     display: flex;
     flex-direction: column;
 }
@@ -21,4 +21,8 @@
     padding-right: 120px;
     width: calc(100% - 40px);
     height: calc(20% - 40px);
+}
+
+.slide {
+    height: 20%;
 }
