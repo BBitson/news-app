@@ -8,6 +8,7 @@ import TopTenMentions from "../Panel/TopTenMentions";
 function HomePage() {
     return (
         <div className="grid">
+            // put slider in here
             <div className="most-mentions">
                 <MostMentions />
             </div>
