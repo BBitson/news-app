@@ -1,10 +1,7 @@
 import { React, useMemo } from "react";
 import "./TopThree.css";
-import useArticles from "../../data/articles/useArticles";
 
 function TopThree(props) {
-    const { topThreeBullish, topThreeBullishTwo } = useArticles();
-
     const topBullSites = useMemo(() => {
         return (
             <div className="TopThree">
