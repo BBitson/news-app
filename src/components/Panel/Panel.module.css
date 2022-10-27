@@ -1,3 +1,14 @@
+.panel {
+    border: 5px solid rgb(140, 128, 128);
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1;
+    width: calc(100% - 40px);
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     flex-direction: row;

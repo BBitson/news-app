@@ -6,6 +6,7 @@ function TopTenMentions() {
     return (
         <Panel>
             <Title>Top Ten Mentions!</Title>
+            <div></div>
         </Panel>
     );
 }
