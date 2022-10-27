@@ -27,7 +27,7 @@ const styles = {
     },
 };
 
-const Slider2 = () => (
+const SliderTwo = () => (
     <SwipeableViews
         style={styles.root}
         slideStyle={styles.slideContainer}
@@ -44,4 +44,5 @@ const Slider2 = () => (
         </Card>
     </SwipeableViews>
 );
-export default Slider2;
+
+export default SliderTwo;
