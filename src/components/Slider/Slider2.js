@@ -27,22 +27,21 @@ const styles = {
     },
 };
 
-const Slider = () => (
+const Slider2 = () => (
     <SwipeableViews
         style={styles.root}
         slideStyle={styles.slideContainer}
         enableMouseEvents
     >
         <Card style={Object.assign({}, styles.slide, styles.slide1)}>
-            <MostMentions />
+            <MostBullish />
         </Card>
         <Card style={Object.assign({}, styles.slide, styles.slide2)}>
-            <MostBullish />
+            <MostMentions />
         </Card>
         <Card style={Object.assign({}, styles.slide, styles.slide3)}>
             <MostBearish />
         </Card>
     </SwipeableViews>
 );
-
-export default Slider;
+export default Slider2;
