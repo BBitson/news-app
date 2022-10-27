@@ -1,4 +1,3 @@
-import { Card } from "@mui/material";
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 import MostBearish from "../Panel/MostBearish";
@@ -6,14 +5,9 @@ import MostBullish from "../Panel/MostBullish";
 import MostMentions from "../Panel/MostMentions";
 
 const styles = {
-    root: {
-        padding: "0 30px",
-    },
-    slideContainer: {
-        padding: "0 10px",
-    },
     slide: {
-        padding: "15px 25px 15px 15px",
+        padding: 15,
+        minHeight: 225,
         color: "#fff",
     },
     slide1: {
@@ -27,22 +21,18 @@ const styles = {
     },
 };
 
-const SliderTwo = () => (
-    <SwipeableViews
-        style={styles.root}
-        slideStyle={styles.slideContainer}
-        enableMouseEvents
-    >
-        <Card style={Object.assign({}, styles.slide, styles.slide1)}>
-            <MostBullish />
-        </Card>
-        <Card style={Object.assign({}, styles.slide, styles.slide2)}>
+const Slider = () => (
+    <SwipeableViews>
+        <div style={Object.assign({}, styles.slide, styles.slide1)}>
             <MostMentions />
-        </Card>
-        <Card style={Object.assign({}, styles.slide, styles.slide3)}>
+        </div>
+        <div style={Object.assign({}, styles.slide, styles.slide2)}>
+            <MostBullish />
+        </div>
+        <div style={Object.assign({}, styles.slide, styles.slide3)}>
             <MostBearish />
-        </Card>
+        </div>
     </SwipeableViews>
 );
 
-export default SliderTwo;
+export default Slider;

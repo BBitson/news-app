@@ -8,7 +8,7 @@ function MostMentions() {
     return (
         <Panel>
             <Title>Most Mentioned Ticker!</Title>
-            {mostMentioned}
+            <h1>{mostMentioned}</h1>
         </Panel>
     );
 }

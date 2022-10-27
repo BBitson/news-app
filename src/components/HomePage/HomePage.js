@@ -7,9 +7,9 @@ function HomePage() {
     return (
         <div className="grid">
             <Slider />
-            <div className="">
+            {/* <div className="">
                 <SliderTwo />
-            </div>
+            </div> */}
         </div>
     );
 }
