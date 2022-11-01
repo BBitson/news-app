@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import Slider from "../Slider";
-import SliderTwo from "../Slider";
+import HorizontalNonLinearStepper from "../Stepper/Stepper";
 
 function HomePage() {
     return (
@@ -10,6 +10,7 @@ function HomePage() {
             {/* <div className="">
                 <SliderTwo />
             </div> */}
+            <HorizontalNonLinearStepper />
         </div>
     );
 }
