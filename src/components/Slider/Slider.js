@@ -1,8 +1,10 @@
+import { ClassNames } from "@emotion/react";
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 import MostBearish from "../Panel/MostBearish";
 import MostBullish from "../Panel/MostBullish";
 import MostMentions from "../Panel/MostMentions";
+import "./Slider.css";
 
 const styles = {
     root: {
@@ -14,10 +16,9 @@ const styles = {
     slide: {
         padding: 15,
         minHeight: 225,
-        color: "#fff",
     },
     slide1: {
-        background: "#0000FF",
+        background: "#000000",
     },
     slide2: {
         background: "#33CC33",
@@ -34,7 +35,7 @@ const Slider = () => (
         enableMouseEvents
     >
         <div style={Object.assign({}, styles.slide, styles.slide1)}>
-            <MostMentions />
+            <MostMentions className="sliderimg" />
         </div>
         <div style={Object.assign({}, styles.slide, styles.slide2)}>
             <MostBullish />

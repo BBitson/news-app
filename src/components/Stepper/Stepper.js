@@ -4,25 +4,13 @@ import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
 
-const steps = [
-    "Select campaign settings",
-    "Create an ad group",
-    "Create an ad",
-];
+const steps = ["Top 10 Mentioned", "Top 10 Bullish", "Top 10 Bearish"];
 
 export default function HorizontalNonLinearStepper() {
     const [activeStep, setActiveStep] = React.useState(0);
 
-    const totalSteps = () => {
-        return steps.length;
-    };
-
     const handleStep = (step: number) => () => {
         setActiveStep(step);
-    };
-
-    const handleReset = () => {
-        setActiveStep(0);
     };
 
     return (
@@ -36,7 +24,6 @@ export default function HorizontalNonLinearStepper() {
                     </Step>
                 ))}
             </Stepper>
-            <div></div>
         </Box>
     );
 }

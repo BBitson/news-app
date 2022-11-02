@@ -3,5 +3,17 @@
     flex-direction: column;
     padding: 20px 10px 10px 10px;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.bull {
+    margin: 0px;
+    padding-top: 20px;
+    color: green;
+}
+
+.bear {
+    margin: 0px;
+    padding-top: 20px;
+    color: red;
 }
