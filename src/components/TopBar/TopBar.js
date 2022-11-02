@@ -54,6 +54,9 @@ function TopBar() {
                         variant="h6"
                         component="div"
                         sx={{ flexGrow: 1 }}
+                        display="flex"
+                        justifyContent="space-evenly"
+                        paddingRight="48px"
                     >
                         News App
                     </Typography>
@@ -89,10 +92,10 @@ function TopBar() {
                     <Divider />
                     <List>
                         {[
-                            "Most Talked About Tickers",
-                            "Top Bullish Tickers",
-                            "Top Bearish Tickers",
-                            "Top on social media",
+                            "All News Stations",
+                            "All Bullish Articles",
+                            "All Bearish Articles",
+                            "Leave a suggestion",
                         ].map((text) => (
                             <ListItem key={text} disablePadding>
                                 <ListItemButton>

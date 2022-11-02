@@ -13,10 +13,14 @@ function HomePage() {
                 <SliderTwo />
             </div> */}
             <HorizontalNonLinearStepper />
-            <h1 className="bull"> Bullish Articles </h1>
-            <SwipeableTextMobileStepperBullish />
-            <h1 className="bear"> Bearish Articles </h1>
-            <SwipeableTextMobileStepperBearish />
+            <div>
+                <h1 className="bull"> Bullish Articles </h1>
+                <SwipeableTextMobileStepperBullish />
+            </div>
+            <div>
+                <h1 className="bear"> Bearish Articles </h1>
+                <SwipeableTextMobileStepperBearish />
+            </div>
         </div>
     );
 }
