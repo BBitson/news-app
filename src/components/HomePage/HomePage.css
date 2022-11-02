@@ -10,10 +10,12 @@
     margin: 0px;
     padding-top: 20px;
     color: green;
+    border-bottom: 1px solid black;
 }
 
 .bear {
     margin: 0px;
     padding-top: 20px;
     color: red;
+    border-bottom: 1px solid black;
 }
