@@ -1,4 +1,3 @@
-import { ClassNames } from "@emotion/react";
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 import MostBearish from "../Panel/MostBearish";
