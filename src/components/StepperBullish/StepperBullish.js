@@ -75,7 +75,7 @@ function SwipeableTextMobileStepperBullish() {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <div>
+                    <div key={step.label}>
                         {Math.abs(activeStep - index) <= 2 ? (
                             <Box
                                 component="img"
