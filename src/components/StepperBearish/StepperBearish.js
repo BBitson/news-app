@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
@@ -48,7 +48,7 @@ function SwipeableTextMobileStepperBearish() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
-    const handleStepChange = (step: number) => {
+    const handleStepChange = (step) => {
         setActiveStep(step);
     };
 
