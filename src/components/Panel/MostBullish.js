@@ -8,7 +8,7 @@ function MostBullish() {
     return (
         <Panel>
             <Title>Most Bullish!</Title>
-            {mostBullish.TickerRef}
+            <h1>{mostBullish.TickerRef}</h1>
         </Panel>
     );
 }
