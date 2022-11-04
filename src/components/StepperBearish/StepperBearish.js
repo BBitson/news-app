@@ -12,24 +12,42 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
+const imagesRef = ["news1", "news2", "news3", "news4"];
+
 const images = [
     {
-        label: <h1 className="h1">Yahoo Finance</h1>,
+        label: (
+            <h1 key={imagesRef[0]} className="h1">
+                Yahoo Finance
+            </h1>
+        ),
         imgPath:
             "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
     },
     {
-        label: <h1 className="h1">The Motley Fool</h1>,
+        label: (
+            <h1 key={imagesRef[1]} className="h1">
+                The Motley Fool
+            </h1>
+        ),
         imgPath:
             "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
     },
     {
-        label: <h1 className="h1">The Economist</h1>,
+        label: (
+            <h1 key={imagesRef[2]} className="h1">
+                The Economist
+            </h1>
+        ),
         imgPath:
             "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
     },
     {
-        label: <h1 className="h1">Financial Times</h1>,
+        label: (
+            <h1 key={imagesRef[3]} className="h1">
+                Financial Times
+            </h1>
+        ),
         imgPath:
             "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
     },
@@ -73,7 +91,7 @@ function SwipeableTextMobileStepperBearish() {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <div>
+                    <div key={step.label.key}>
                         {Math.abs(activeStep - index) <= 2 ? (
                             <Box
                                 component="img"
