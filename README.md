@@ -1,4 +1,6 @@
 # news-app
+![Netlify](https://img.shields.io/netlify/0945f7c6-ec55-4744-9a5e-ff09b6ae6324?logo=netlify&style=flat-square)
+
 
 https://bbitson-news-app.netlify.app
 
