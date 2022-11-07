@@ -1,13 +1,13 @@
+import { Card } from "@mui/material";
 import React from "react";
-import Panel from "./Panel";
 import Title from "../Title";
 
 function TopTenMentions() {
     return (
-        <Panel>
+        <Card>
             <Title>Top Ten Mentions!</Title>
             <div></div>
-        </Panel>
+        </Card>
     );
 }
 

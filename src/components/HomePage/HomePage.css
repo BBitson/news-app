@@ -1,20 +1,49 @@
 .grid {
     display: flex;
     flex-direction: column;
-    padding: 20px 10px 10px 10px;
+    width: 100%;
+    padding: 30px 10px 10px 1px;
     grid-column-gap: 20px;
-    grid-row-gap: 25px;
+    grid-row-gap: 5px;
+    align-items: center;
 }
 
+.container {
+    width: 100%;
+    max-width: 900px;
+    height: 220px;
+    background: black;
+    margin-bottom: 35px;
+}
+.align {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.swiper {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
 .bull {
-    color: green;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    border-bottom: 2px solid black;
     margin: 0;
+    width: 300px;
+    font-size: 25px;
 }
 
 .bear {
     margin: 0px;
-    color: red;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    width: 300px;
+    font-size: 25px;
 }

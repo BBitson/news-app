@@ -7,10 +7,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const imagesRef = ["news1", "news2", "news3", "news4"];
 
@@ -53,7 +49,7 @@ const images = [
     },
 ];
 
-function SwipeableTextMobileStepperBearish() {
+function SwipeTextMobileStepperBearish() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = images.length;
@@ -64,10 +60,6 @@ function SwipeableTextMobileStepperBearish() {
 
     const handleBack = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-
-    const handleStepChange = (step) => {
-        setActiveStep(step);
     };
 
     return (
@@ -84,21 +76,20 @@ function SwipeableTextMobileStepperBearish() {
             >
                 <Typography>{images[activeStep].label}</Typography>
             </Paper>
-            <AutoPlaySwipeableViews
+            <Paper
                 axis={theme.direction === "rtl" ? "x-reverse" : "x"}
                 index={activeStep}
-                onChangeIndex={handleStepChange}
-                enableMouseEvents
             >
                 {images.map((step, index) => (
                     <div key={step.label.key}>
-                        {Math.abs(activeStep - index) <= 2 ? (
+                        {Math.abs(activeStep - index) <= 0 ? (
                             <Box
                                 component="img"
                                 sx={{
                                     height: 255,
                                     display: "block",
                                     maxWidth: 400,
+                                    minWidth: 400,
                                     overflow: "hidden",
                                     width: "100%",
                                 }}
@@ -108,7 +99,7 @@ function SwipeableTextMobileStepperBearish() {
                         ) : null}
                     </div>
                 ))}
-            </AutoPlaySwipeableViews>
+            </Paper>
             <MobileStepper
                 steps={maxSteps}
                 position="static"
@@ -146,4 +137,4 @@ function SwipeableTextMobileStepperBearish() {
     );
 }
 
-export default SwipeableTextMobileStepperBearish;
+export default SwipeTextMobileStepperBearish;
