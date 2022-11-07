@@ -4,12 +4,17 @@ https://bbitson-news-app.netlify.app
 
 This app will help you find what tickers the news is talking about.
 
- - [Screenshot](#screenshot)
+ - [Desktop Screenshot](#desktop-screenshot)
+ - [App Screenshot](#app-screenshot)
  - [Provided Functionalities](#Provided-functionalities)
  - [Planned Enhancements](#planned-enhancements)
  
- # Screenshot
- ![Material Color Design Palette Website Screenshot](preview.jpg)
+ # Desktop Screenshot
+ ![Screenshot of Dekstop app](https://user-images.githubusercontent.com/116586800/200413217-4651280c-994c-4f46-b1fa-5993287fcb2c.jpg)
+ 
+ # App Screenshot
+ ![Screenshot of App](https://user-images.githubusercontent.com/116586800/200412297-7824bf3e-eda6-4ad9-bcf7-80aba76abb6f.jpg)
+ 
 
 # Provided Functionalities
 This news filtration app provides multiple ways of seeing what the news is talking about by providing things such as:
