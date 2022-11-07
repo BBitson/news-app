@@ -5,16 +5,20 @@
     padding: 30px 10px 10px 10px;
     grid-column-gap: 20px;
     grid-row-gap: 5px;
+    align-items: center;
 }
 
 .container {
     width: 100%;
+    max-width: 900px;
     height: 260px;
     background: black;
-    flex-direction: row;
-    align-items: left;
-    justify-content: space-around;
     margin-bottom: 35px;
+}
+.align {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .swiper-wrapper {
@@ -26,7 +30,10 @@
     flex-direction: row;
     overflow: scroll;
 }
-
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
 .bull {
     color: green;
     border-bottom: 1px solid black;

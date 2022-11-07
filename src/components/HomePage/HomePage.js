@@ -10,12 +10,14 @@ import HorizontalNonLinearStepper from "../Stepper/Stepper";
 function HomePage() {
     return (
         <div>
-            <div className="container">
-                <div className="swiper-wrapper">
-                    <div className="swiper">
-                        <MostMentions />
-                        <MostBullish className="under" />
-                        <MostBearish />
+            <div className="align">
+                <div className="container">
+                    <div className="swiper-wrapper">
+                        <div className="swiper">
+                            <MostMentions />
+                            <MostBullish className="under" />
+                            <MostBearish />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,7 +27,7 @@ function HomePage() {
                 <h1 className="bull"> Bullish Articles </h1>
                 <SwipeTextMobileStepperBullish />
             </div>
-            <div>
+            <div className="grid">
                 <h1 className="bear"> Bearish Articles </h1>
                 <SwipeTextMobileStepperBearish />
             </div>
