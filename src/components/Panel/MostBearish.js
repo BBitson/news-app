@@ -9,7 +9,7 @@ function MostBearish() {
     return (
         <Panel>
             <Title>Most Bearish!</Title>
-            <h1>{mostBearish.TickerRef}</h1>
+            <h2>{mostBearish.TickerRef}</h2>
         </Panel>
     );
 }

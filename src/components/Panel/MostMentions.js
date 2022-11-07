@@ -9,7 +9,7 @@ function MostMentions() {
     return (
         <Panel>
             <Title>Most Mentioned Ticker! </Title>
-            <h1>{mostMentioned}</h1>
+            <h2>{mostMentioned}</h2>
         </Panel>
     );
 }
