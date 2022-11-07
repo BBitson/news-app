@@ -89,6 +89,7 @@ function SwipeTextMobileStepperBearish() {
                                     height: 255,
                                     display: "block",
                                     maxWidth: 400,
+                                    minWidth: 400,
                                     overflow: "hidden",
                                     width: "100%",
                                 }}

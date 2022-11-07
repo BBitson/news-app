@@ -36,13 +36,14 @@
 }
 .bull {
     color: green;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    border-bottom: 2px solid black;
     margin: 0;
+    width: 300px;
 }
 
 .bear {
     margin: 0px;
     color: red;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    width: 300px;
 }
