@@ -50,7 +50,7 @@ const images = [
     },
 ];
 
-function SwipeableTextMobileStepperBullish() {
+function SwipeTextMobileStepperBullish() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = images.length;
@@ -142,4 +142,4 @@ function SwipeableTextMobileStepperBullish() {
     );
 }
 
-export default SwipeableTextMobileStepperBullish;
+export default SwipeTextMobileStepperBullish;

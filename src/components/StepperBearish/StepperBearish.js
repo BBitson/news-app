@@ -49,7 +49,7 @@ const images = [
     },
 ];
 
-function SwipeableTextMobileStepperBearish() {
+function SwipeTextMobileStepperBearish() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = images.length;
@@ -140,4 +140,4 @@ function SwipeableTextMobileStepperBearish() {
     );
 }
 
-export default SwipeableTextMobileStepperBearish;
+export default SwipeTextMobileStepperBearish;
