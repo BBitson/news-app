@@ -62,10 +62,6 @@ function SwipeTextMobileStepperBearish() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
-    const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
-
     return (
         <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
             <Paper
