@@ -7,10 +7,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-import { Container } from "@mui/material";
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const imagesRef = ["news1", "news2", "news3", "news4"];
 
@@ -84,15 +80,13 @@ function SwipeableTextMobileStepperBearish() {
             >
                 <Typography>{images[activeStep].label}</Typography>
             </Paper>
-            <AutoPlaySwipeableViews
+            <Paper
                 axis={theme.direction === "rtl" ? "x-reverse" : "x"}
                 index={activeStep}
-                onChangeIndex={handleStepChange}
-                enableMouseEvents
             >
                 {images.map((step, index) => (
                     <div key={step.label.key}>
-                        {Math.abs(activeStep - index) <= 2 ? (
+                        {Math.abs(activeStep - index) <= 0 ? (
                             <Box
                                 component="img"
                                 sx={{
@@ -108,7 +102,7 @@ function SwipeableTextMobileStepperBearish() {
                         ) : null}
                     </div>
                 ))}
-            </AutoPlaySwipeableViews>
+            </Paper>
             <MobileStepper
                 steps={maxSteps}
                 position="static"
