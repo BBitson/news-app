@@ -19,7 +19,12 @@ export default function HorizontalNonLinearStepper() {
     };
 
     return (
-        <Stepper nonLinear activeStep={activeStep} alternativeLabel>
+        <Stepper
+            className="step-limit"
+            nonLinear
+            activeStep={activeStep}
+            alternativeLabel
+        >
             {steps.map((label, index) => (
                 <Step key={label}>
                     <StepButton color="inherit" onClick={handleStep(index)}>

@@ -21,7 +21,9 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <HorizontalNonLinearStepper />
+            <div className="align">
+                <HorizontalNonLinearStepper />
+            </div>
 
             <div className="grid">
                 <h1 className="bull"> Bullish Articles </h1>
