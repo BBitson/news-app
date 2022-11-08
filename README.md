@@ -1,5 +1,14 @@
 # news-app
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fbbitson-news-app.netlify.app)
+![GitHub top language](https://img.shields.io/github/languages/top/bbitson/news-app)
+![GitHub last commit](https://img.shields.io/github/last-commit/bbitson/news-app)
 ![Netlify](https://img.shields.io/netlify/0945f7c6-ec55-4744-9a5e-ff09b6ae6324?logo=netlify&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/bbitson/news-app)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/bbitson/news-app)
+![GitHub language count](https://img.shields.io/github/languages/count/bbitson/news-app)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bbitson/news-app)
+![GitHub issues](https://img.shields.io/github/issues/bbitson/news-app)
+
 
 
 https://bbitson-news-app.netlify.app
