@@ -8,6 +8,7 @@ import TickerPage from "./../TickerPage";
 function App() {
     const router = createBrowserRouter([
         {
+            path: "",
             element: <TopBar />,
             children: [
                 {
