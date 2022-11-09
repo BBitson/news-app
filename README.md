@@ -21,10 +21,10 @@ This app will help you find what tickers the news is talking about.
  - [Planned Enhancements](#planned-enhancements)
  
  # Desktop Screenshot
- ![Screenshot of Dekstop app](https://user-images.githubusercontent.com/116586800/200413217-4651280c-994c-4f46-b1fa-5993287fcb2c.jpg)
+ ![Screenshot of Dekstop app]()
  
  # App Screenshot
- ![Screenshot of App](https://user-images.githubusercontent.com/116586800/200412297-7824bf3e-eda6-4ad9-bcf7-80aba76abb6f.jpg)
+ ![Screenshot of App]()
  
 
 # Provided Functionalities
