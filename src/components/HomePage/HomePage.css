@@ -10,11 +10,16 @@
 
 .container {
     width: 100%;
-    max-width: 900px;
-    height: 220px;
-    background: black;
+    height: 250px;
+    background: #1976d9;
     margin-bottom: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    padding-top: 20px;
 }
 .align {
     align-items: center;
@@ -25,11 +30,14 @@
 .swiper-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+    overflow-x: scroll;
 }
+
 .swiper {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
 }
 ::-webkit-scrollbar {
     width: 0; /* Remove scrollbar space */
@@ -38,13 +46,11 @@
 .bull {
     border-bottom: 2px solid black;
     margin: 0;
-    width: 300px;
     font-size: 25px;
 }
 
 .bear {
     margin: 0px;
     border-bottom: 2px solid black;
-    width: 300px;
     font-size: 24px;
 }
