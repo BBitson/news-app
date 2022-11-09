@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const idOne = uuidv4();
@@ -134,35 +134,12 @@ const useArticles = () => {
         return brTake;
     }, [articles, mostMentioned]);
 
-    const topThreeBullishTwo = useMemo(() => {
-        const topMe = mostMentioned;
-        return articles.reduce(
-            (prev, current) => {
-                if (
-                    articles.TickerRef === topMe &&
-                    prev.BullishTake > current.BullishTake
-                ) {
-                    return prev;
-                }
-                return current;
-            },
-            { BullishTake: 0 }
-        );
-    }, [articles, mostMentioned]);
-
-    const topThreeBullish = useMemo(() => {
-        // filter articles down to only ones that only contained MOST MENTIONED ticker
-        const filtered = articles.filter(
-            (article) => article.TickerRef === mostMentioned
-        );
-        // sort them by bullishtake
-        filtered.sort((a, b) => b.BullishTake - a.BullishTake);
-
-        // group them by newsname --- keep highest bullishtake
-        //        const filteredGrouped = filtered.filter(({ NewsName }) => NewsName);
-        // return first three entries
-    }, [articles, mostMentioned]);
-
+    const getArticlesByTicker = useCallback(
+        (ticker) => {
+            return articles.filter((article) => article.TickerRef === ticker);
+        },
+        [articles]
+    );
     return {
         articles,
         mostBullish,
@@ -170,8 +147,7 @@ const useArticles = () => {
         mostMentioned,
         topMentionBullish,
         topMentionBearish,
-        topThreeBullish,
-        topThreeBullishTwo,
+        getArticlesByTicker,
     };
 };
 

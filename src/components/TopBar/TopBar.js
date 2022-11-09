@@ -18,6 +18,7 @@ import {
     styled,
     useTheme,
 } from "@mui/material";
+import { Link, Outlet } from "react-router-dom";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
     display: "flex",
@@ -29,12 +30,12 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const theme = useTheme;
+
 function TopBar() {
     const [isOpen, setIsOpen] = useState(false);
     const drawerWidth = 240;
     const handleDrawerToggle = () => {
         setIsOpen(!isOpen);
-        console.log(isOpen);
     };
     return (
         <>
@@ -58,7 +59,7 @@ function TopBar() {
                         justifyContent="space-evenly"
                         paddingRight="48px"
                     >
-                        News App
+                        <Link to="/"> News App</Link>
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -107,6 +108,7 @@ function TopBar() {
                     <Divider />
                 </Drawer>
             </Box>
+            <Outlet />
         </>
     );
 }

@@ -6,4 +6,10 @@
     width: 100%;
     min-width: 250px;
     align-items: center;
+    border: solid 8px rgb(2, 17, 114);
+}
+
+span {
+    color: black;
+    font-size: 25px;
 }

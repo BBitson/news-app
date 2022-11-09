@@ -5,7 +5,7 @@ import SwipeTextMobileStepperBearish from "../StepperBearish/StepperBearish";
 import MostMentions from "../Panel/MostMentions";
 import MostBearish from "../Panel/MostBearish";
 import MostBullish from "../Panel/MostBullish";
-import HorizontalNonLinearStepper from "../Stepper/Stepper";
+import ButtonGroup from "../ButtonGroup";
 
 function HomePage() {
     return (
@@ -14,15 +14,15 @@ function HomePage() {
                 <div className="container">
                     <div className="swiper-wrapper">
                         <div className="swiper">
+                            <MostBullish />
                             <MostMentions />
-                            <MostBullish className="under" />
                             <MostBearish />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="align">
-                <HorizontalNonLinearStepper />
+                <ButtonGroup />
             </div>
 
             <div className="grid">
